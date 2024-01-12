@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form action="success.html">
+      <table>
+        <tr>
+          <td colspan="2">
+            <h1><span class="note">TEE</span> DIGITALS</h1>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <h3 class="mytitle">Create an account</h3>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Firstname"> Firstname : </label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="Firstname"
+              id=""
+              maxlength="12"
+              minlength="8"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Lastname"> Lastname : </label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="Lastname"
+              maxlength="12"
+              minlength="5"
+              id=""
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email"> E-mail : </label>
+          </td>
+          <td>
+            <input type="email" name="email" id="" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password"> Password : </label>
+          </td>
+          <td>
+            <input
+              type="password"
+              name="password"
+              id=""
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain @ least a uppercase,lowercase character and some special characters"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pnumber"> Phone Number : </label>
+          </td>
+          <td>
+            <input
+              type="tel"
+              name="pnumber"
+              id=""
+              placeholder="0804-234-3427"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender"> Gender :</label>
+          </td>
+          <td>
+            <select name="gender" id="" required>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Transgender">Transgender</option>
+              <option value="Can't say">Can't say</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dob"> Date of Birth : </label>
+          </td>
+          <td>
+            <input
+              type="date"
+              name="dob"
+              id=""
+              minlength="1995-03-25"
+              maxlength="2022-08-26"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dob"> Select your favorit color </label>
+          </td>
+          <td>
+            <input type="color" name="color" id="" required />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="submit"
+              value="Register"
+              id="loginbtn"
+              class="register"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
